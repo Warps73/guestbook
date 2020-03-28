@@ -4,19 +4,16 @@
 namespace App\Controller;
 
 
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
-class HomeController
+class HomeController extends AbstractController
 {
     /**
      * @Route("/")
      */
     public function home()
     {
-        return new Response(
-            '<html><body>Yo</body></html>'
-        );
-
+        return $this->render('base.html.twig');
     }
 }
