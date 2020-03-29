@@ -3,6 +3,7 @@
     "license": "proprietary",
     "require": {
         "php": "^7.2.5",
+        "ext-gd": "*",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "easycorp/easyadmin-bundle": "^2.3",
