@@ -20,9 +20,9 @@ class ConferenceController extends AbstractController
         }
         return new Response('
             <html>
-                <body>
-                    $greet
-                    <img src="/images/under-construction.gif" />
+                <body>' .
+            $greet
+            . '<img src="/images/under-construction.gif" />
                 </body>
             </html>'
         );
