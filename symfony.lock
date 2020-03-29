@@ -103,6 +103,9 @@
     "egulias/email-validator": {
         "version": "2.1.17"
     },
+    "escapestudios/symfony2-coding-standard": {
+        "version": "3.11.0"
+    },
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
@@ -159,6 +162,15 @@
         "files": [
             "./config/packages/sensio_framework_extra.yaml"
         ]
+    },
+    "squizlabs/php_codesniffer": {
+        "version": "3.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "3.0",
+            "ref": "0dc9cceda799fd3a08b96987e176a261028a3709"
+        }
     },
     "symfony/asset": {
         "version": "v5.0.6"
@@ -544,6 +556,9 @@
         "version": "v5.0.6"
     },
     "twig/extra-bundle": {
+        "version": "v3.0.3"
+    },
+    "twig/intl-extra": {
         "version": "v3.0.3"
     },
     "twig/twig": {

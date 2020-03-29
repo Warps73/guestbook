@@ -29,10 +29,12 @@
         "symfony/validator": "5.0.*",
         "symfony/web-link": "5.0.*",
         "symfony/webpack-encore-bundle": "^1.7",
-        "symfony/yaml": "5.0.*"
+        "symfony/yaml": "5.0.*",
+        "twig/intl-extra": "^3.0"
     },
     "require-dev": {
         "symfony/debug-pack": "^1.0",
+        "escapestudios/symfony2-coding-standard": "3.11.0",
         "symfony/maker-bundle": "^1.14",
         "symfony/profiler-pack": "^1.0",
         "symfony/test-pack": "*"
