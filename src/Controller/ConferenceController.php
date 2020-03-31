@@ -74,4 +74,27 @@ class ConferenceController extends AbstractController
             )
         );
     }
+
+    /**
+     * @Route("/test", name="test")
+     * @param Environment $twig
+     * @param Conference $conference
+     * @param CommentRepository $commentRepository
+     * @return Response
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
+     */
+    public function test(
+        Environment $twig,
+        Conference $conference,
+        CommentRepository $commentRepository
+
+    ) {
+        return new Response(
+            $twig->render(
+                'conference/test.html.twig'
+            )
+        );
+    }
 }
