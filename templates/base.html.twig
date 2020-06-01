@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Welcome!{% endblock %}</title>
@@ -7,6 +7,20 @@
 </head>
 <body>
 {% block body %}
+ <header>
+     <h1>
+         <a href="{{ path('homepage') }}">Guestbook</a>
+     </h1>
+     <ul>
+         {% for conference in conferences %}
+             <li>
+                 <a href="{{ path('conference', { id: conference.id })}}">
+                     {{ conference }}
+                 </a>
+             </li>
+         {% endfor %}
+     </ul>
+ </header>
 {% endblock %}
 {% block javascripts %}
 {% endblock %}
